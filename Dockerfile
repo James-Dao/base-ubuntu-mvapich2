@@ -55,4 +55,4 @@ RUN ./configure --enable-rdma-cm MV2_USE_CUDA=1 RSH_CMD=/usr/bin/ssh SSH_CMD=/us
 RUN make -j4
 RUN make install
 
-RUN sudo apt-get clean && rm -rf /var/lib/apt/* && rm -rf /usr/local/src/mvapich2-2.1
+RUN sudo apt-get clean
